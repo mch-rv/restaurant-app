@@ -1,0 +1,121 @@
+@media screen and (max-width: 499px) {
+ .nav {
+  z-index: 10;
+  background-color: #fff;
+  width: 300px;
+  position: absolute;
+
+  /* This trasform moves the drawer off canvas. */
+  -webkit-transform: translate(-300px, 0);
+  transform: translate(-300px, 0);
+
+  /* Optionally, we animate the drawer. */
+  transition: transform 0.3s ease;
+ }
+
+ .open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+ }
+
+ .nav__item {
+  display: list-item;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  text-align: left;
+ }
+ .centered {
+  padding: 6rem;
+  font-size: 28px;
+ }
+ .cardList {
+  display: grid;
+ }
+ .main__title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+ }
+ .review__list {
+  display: grid;
+  grid-template-columns: 1fr;
+ }
+}
+
+@media screen and (min-width: 500px) {
+ .header__menu {
+  display: none;
+ }
+ .centered {
+  padding: 6rem;
+ }
+ .main__title {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+ }
+ .review__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media screen and (min-width: 650px) {
+ .centered {
+  padding: 6rem;
+ }
+ .restaurant__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media screen and (min-width: 700px) {
+ .cardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ }
+}
+
+@media screen and (min-width: 800px) {
+ .nav__list {
+  max-width: 800px;
+  margin: 0 auto;
+ }
+ .main__title {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+ }
+}
+
+@media screen and (min-width: 900px) {
+ .main__title {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ main {
+  max-width: 1200px;
+ }
+ .hero {
+  min-width: 1000px;
+ }
+ .cardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+ .main__title {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+ }
+ .review__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+}
